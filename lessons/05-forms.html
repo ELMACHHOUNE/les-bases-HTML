@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML 101 • Forms</title>
+    <link rel="shortcut icon" href="/src/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body
+    class="bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100"
+  >
+    <header
+      class="sticky top-0 z-50 backdrop-blur bg-white/70 dark:bg-neutral-900/70 border-b border-neutral-200/60 dark:border-neutral-800"
+    >
+      <nav
+        class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between"
+      >
+        <a href="../index.html" class="flex items-center gap-2 font-semibold">
+          <img src="/src/icon.png" alt="Logo" class="w-6 h-6 rounded" /><span
+            >HTML 101</span
+          >
+        </a>
+        <div class="hidden md:flex items-center gap-6 text-sm">
+          <a class="hover:opacity-80" href="./04-links-images.html">Prev</a>
+          <a class="hover:opacity-80" href="../index.html">Home</a>
+          <a class="hover:opacity-80" href="./06-layout-semantic.html">Next</a>
+        </div>
+        <div class="flex items-center gap-2">
+          <button
+            id="themeToggle"
+            class="rounded px-3 py-2 text-sm border border-neutral-200 dark:border-neutral-800 hover:bg-neutral-100 dark:hover:bg-neutral-800"
+          >
+            Theme
+          </button>
+          <button
+            id="menuToggle"
+            class="md:hidden rounded px-3 py-2 text-sm border border-neutral-200 dark:border-neutral-800"
+          >
+            Menu
+          </button>
+        </div>
+      </nav>
+      <div
+        id="mobileMenu"
+        class="md:hidden hidden border-t border-neutral-200 dark:border-neutral-800"
+      >
+        <div class="mx-auto max-w-6xl px-4 py-3 flex flex-col gap-2 text-sm">
+          <a class="py-1" href="./04-links-images.html">Prev</a>
+          <a class="py-1" href="../index.html">Home</a>
+          <a class="py-1" href="./06-layout-semantic.html">Next</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-4 py-8">
+      <h1 class="text-3xl font-extrabold">Forms</h1>
+      <p class="mt-2 opacity-80">
+        Connect labels to inputs, use appropriate types, and leverage built-in
+        validation.
+      </p>
+
+      <section class="mt-8">
+        <h3 class="font-semibold mb-2">Try it</h3>
+        <pre class="relative">
+          <div class="absolute top-2 right-2 flex gap-2">
+            <button class="btn" data-copy>Copy</button>
+            <button class="btn" data-run>Run</button>
+          </div>
+<code>&lt;form onsubmit="alert('Submitted!'); return false;">
+  &lt;div>
+    &lt;label for="email">Email&lt;/label>
+    &lt;input id="email" name="email" type="email" required placeholder="you@example.com">
+  &lt;/div>
+  &lt;div>
+    &lt;label>
+      &lt;input type="checkbox" name="agree" required> I agree to the terms
+    &lt;/label>
+  &lt;/div>
+  &lt;button type="submit">Submit&lt;/button>
+&lt;/form></code>
+        </pre>
+        <div data-demo-target class="mt-3"></div>
+      </section>
+
+      <nav class="mt-10 flex justify-between text-sm">
+        <a class="underline" href="./04-links-images.html"
+          >← Back: Links & Images</a
+        >
+        <a class="underline" href="./06-layout-semantic.html"
+          >Next: Layout & Semantics →</a
+        >
+      </nav>
+    </main>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

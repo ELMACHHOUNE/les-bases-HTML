@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn HTML with GoToDev — a programmer-friendly course with step-by-step lessons, runnable examples, and best practices to build strong HTML fundamentals fast."
+    />
+    <link rel="canonical" href="https://elmachhoune.me/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="GoToDev" />
+    <meta property="og:title" content="Learn HTML with GoToDev" />
+    <meta
+      property="og:description"
+      content="Learn HTML with GoToDev — a programmer-friendly course with step-by-step lessons, runnable examples, and best practices to build strong HTML fundamentals fast."
+    />
+    <meta property="og:url" content="https://elmachhoune.me/" />
+    <meta property="og:image" content="https://elmachhoune.me/src/icon.png" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Learn HTML with GoToDev" />
+    <meta
+      name="twitter:description"
+      content="Learn HTML with GoToDev — a programmer-friendly course with step-by-step lessons, runnable examples, and best practices to build strong HTML fundamentals fast."
+    />
+    <meta name="twitter:image" content="https://elmachhoune.me/src/icon.png" />
+    <title>Learn HTML with GoToDev</title>
+    <link rel="shortcut icon" href="/src/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body
+    class="bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100"
+  >
+    <header
+      class="sticky top-0 z-50 backdrop-blur bg-white/70 dark:bg-neutral-900/70 border-b border-neutral-200/60 dark:border-neutral-800"
+    >
+      <nav
+        class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between"
+      >
+        <a href="./" class="flex items-center gap-2 font-semibold">
+          <img src="/src/icon.png" alt="Logo" class="w-6 h-6 rounded" />
+          <span>HTML 101</span>
+        </a>
+        <div class="hidden md:flex items-center gap-6 text-sm">
+          <a class="hover:opacity-80" href="./">Home</a>
+          <a class="hover:opacity-80" href="./lessons/01-introduction.html"
+            >Start</a
+          >
+          <a class="hover:opacity-80" href="./lessons/06-layout-semantic.html"
+            >Layout</a
+          >
+          <a
+            class="hover:opacity-80"
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Docs</a
+          >
+        </div>
+        <div class="flex items-center gap-2">
+          <button
+            id="themeToggle"
+            class="rounded px-3 py-2 text-sm border border-neutral-200 dark:border-neutral-800 hover:bg-neutral-100 dark:hover:bg-neutral-800"
+            title="Toggle theme"
+          >
+            Theme
+          </button>
+          <button
+            id="menuToggle"
+            class="md:hidden rounded px-3 py-2 text-sm border border-neutral-200 dark:border-neutral-800"
+          >
+            Menu
+          </button>
+        </div>
+      </nav>
+      <div
+        id="mobileMenu"
+        class="md:hidden hidden border-t border-neutral-200 dark:border-neutral-800"
+      >
+        <div class="mx-auto max-w-6xl px-4 py-3 flex flex-col gap-2 text-sm">
+          <a class="py-1" href="./">Home</a>
+          <a class="py-1" href="./lessons/01-introduction.html">Start</a>
+          <a class="py-1" href="./lessons/06-layout-semantic.html">Layout</a>
+          <a
+            class="py-1"
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Docs</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-4">
+      <section class="py-14 md:py-20">
+        <div
+          class="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 md:gap-10 lg:gap-12 items-start md:items-center"
+        >
+          <div>
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">
+              Learn HTML the programmer way
+            </h1>
+            <p class="mt-4 text-neutral-600 dark:text-neutral-300">
+              Step-by-step lessons with runnable examples. Build strong HTML
+              fundamentals quickly.
+            </p>
+            <div class="mt-6 flex gap-3">
+              <a
+                href="./lessons/01-introduction.html"
+                class="px-5 py-3 rounded bg-neutral-900 text-white dark:bg-white dark:text-neutral-900 hover:opacity-90 text-sm"
+                >Start Learning</a
+              >
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="px-5 py-3 rounded border border-neutral-200 dark:border-neutral-800 hover:bg-neutral-100 dark:hover:bg-neutral-800 text-sm"
+                >MDN</a
+              >
+            </div>
+          </div>
+          <div
+            class="rounded-xl border border-neutral-200 dark:border-neutral-800 p-4 bg-white/60 dark:bg-neutral-900/60"
+          >
+            <pre class="relative overflow-auto max-h-72 text-sm">
+<code>&lt;!DOCTYPE html>
+&lt;html lang="en">
+  &lt;head>
+    &lt;meta charset="UTF-8" />
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    &lt;title>Hello, HTML&lt;/title>
+  &lt;/head>
+  &lt;body>
+    &lt;h1>Hello, world!&lt;/h1>
+    &lt;p>This is your first HTML page.&lt;/p>
+  &lt;/body>
+&lt;/html></code>
+            </pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-6">
+        <h2 class="text-2xl font-bold mb-4">Curriculum</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <a class="lesson-card" href="./lessons/01-introduction.html">
+            <span class="text-xs font-mono opacity-70">01</span>
+            <span class="font-semibold">Introduction</span>
+            <span class="opacity-70 text-sm"
+              >What HTML is, setup, anatomy of a page.</span
+            >
+          </a>
+          <a class="lesson-card" href="./lessons/02-elements-attributes.html">
+            <span class="text-xs font-mono opacity-70">02</span>
+            <span class="font-semibold">Elements & Attributes</span>
+            <span class="opacity-70 text-sm"
+              >Tags, attributes, nesting, void elements.</span
+            >
+          </a>
+          <a class="lesson-card" href="./lessons/03-text-structure.html">
+            <span class="text-xs font-mono opacity-70">03</span>
+            <span class="font-semibold">Text & Structure</span>
+            <span class="opacity-70 text-sm"
+              >Headings, paragraphs, lists, tables.</span
+            >
+          </a>
+          <a class="lesson-card" href="./lessons/04-links-images.html">
+            <span class="text-xs font-mono opacity-70">04</span>
+            <span class="font-semibold">Links & Images</span>
+            <span class="opacity-70 text-sm"
+              >Anchors, paths, images, alt text.</span
+            >
+          </a>
+          <a class="lesson-card" href="./lessons/05-forms.html">
+            <span class="text-xs font-mono opacity-70">05</span>
+            <span class="font-semibold">Forms</span>
+            <span class="opacity-70 text-sm"
+              >Inputs, labels, validation, semantics.</span
+            >
+          </a>
+          <a class="lesson-card" href="./lessons/06-layout-semantic.html">
+            <span class="text-xs font-mono opacity-70">06</span>
+            <span class="font-semibold">Layout & Semantics</span>
+            <span class="opacity-70 text-sm"
+              >Semantic tags, sections, best practices.</span
+            >
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-16 border-t border-neutral-200 dark:border-neutral-800">
+      <div
+        class="mx-auto max-w-6xl px-4 py-8 text-sm flex flex-col md:flex-row gap-2 items-center justify-between"
+      >
+        <p class="opacity-70">
+          © <span data-year></span>
+          <a
+            href="https://gotodev.ma"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:underline"
+            >GoToDev</a
+          >
+        </p>
+        <p class="opacity-60">Theme-ready • Runnable examples</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script>
+      document.querySelector("[data-year]").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>

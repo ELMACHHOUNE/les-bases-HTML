@@ -1,0 +1,62 @@
+:root {
+  color-scheme: light dark;
+}
+
+.lesson-card {
+  display: grid;
+  gap: 6px;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid hsl(0 0% 90%);
+  background: hsla(0,0%,100%,0.7);
+  text-decoration: none;
+}
+@media (prefers-color-scheme: dark) {
+  .lesson-card {
+    border-color: hsl(0 0% 18%);
+    background: hsla(0,0%,8%,0.7);
+    color: inherit;
+  }
+}
+.lesson-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px hsl(0 0% 0% / 0.06);
+}
+
+pre {
+  background: hsla(0,0%,100%,0.6);
+  border: 1px solid hsl(0 0% 90%);
+  border-radius: 12px;
+  padding: 12px;
+}
+@media (prefers-color-scheme: dark) {
+  pre {
+    background: hsla(0,0%,8%,0.6);
+    border-color: hsl(0 0% 18%);
+  }
+}
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+/* Small utility for buttons inside code blocks */
+.btn {
+  border: 1px solid hsl(0 0% 90%);
+  background: white;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+@media (prefers-color-scheme: dark) {
+  .btn {
+    border-color: hsl(0 0% 18%);
+    background: hsl(0 0% 12%);
+    color: white;
+  }
+}
+
+/* Better scrolling for code */
+pre { overflow: auto; }
+::-webkit-scrollbar { height: 10px; width: 10px; }
+::-webkit-scrollbar-thumb { background: hsl(0 0% 80%); border-radius: 999px; }
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-thumb { background: hsl(0 0% 30%); }
+}
